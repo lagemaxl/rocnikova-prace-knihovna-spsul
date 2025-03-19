@@ -1,0 +1,180 @@
+.books {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pagination {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin: 1em 0 1em 0;
+}
+
+.home-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 95%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 0 0 10px 10px;
+}
+
+.search-bar {
+  width: 300px;
+  margin: 1.5em;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tag-selector {
+  width: 300px;
+  margin: 1.5em;
+}
+
+.reviews-section {
+  margin-top: 1rem;
+}
+
+.review-item {
+  padding: 0.5em;
+  margin: 0 0.5em 0.5em 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ddd ;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.book-details-texts {
+  width: 65%;
+}
+
+.book-details-texts-header {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-details-texts-header h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.book-detais-body {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book-detais-body p {
+  width: 50%;
+  margin-top: 1em;
+}
+
+@media (max-width: 500px) {
+  .book-details-texts {
+    width: 100%;
+  }
+
+  .book-details-texts-header {
+    margin-top: 0;
+  }
+
+  .book-details-texts-header h3 {
+    font-size: 1.2em;
+  }
+
+  .book-detais-body p {
+    width: 100%;
+  }
+}
+
+.add-review-section {
+  margin-top: 20px;
+}
+
+.submit-review-button {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-review-button:hover {
+  background-color: var(--secondary-hover);
+}
+
+.iconDots {
+  cursor: pointer;
+}
+
+.iconDots:hover {
+  background-color: #f5f5f5;
+  border-radius: 100%;
+}
+
+.review-header-right {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+}
+
+@media (max-width: 900px) {
+  .search-bar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-header {
+    flex-direction: collumn;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 1em 0.5em;
+  }
+
+  .tag-selector {
+    width: 40%;
+    margin: 0;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .sort-selector {
+    width: 40%;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+  }
+}

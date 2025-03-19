@@ -1,0 +1,54 @@
+.stat-card {
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  padding: 1rem;
+  width: 100%;
+}
+
+.stat-card-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat-card-icon {
+  background-color: #df3f1b21; /* Barva ikonky (modrý odstín) */
+  color: var(--secondary);
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-card-title {
+  font-size: 0.875rem;
+  color: var(--secondary-text); /* Tmavě šedá barva pro text */
+  margin: 0;
+}
+
+.stat-card-value {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 !important;
+  color: var(--main-text); /* Tmavý text */
+}
+
+.stat-card:hover {
+  transform: translateY(-1px);
+  opacity: 1;
+}

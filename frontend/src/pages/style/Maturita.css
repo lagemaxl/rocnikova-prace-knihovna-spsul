@@ -1,0 +1,82 @@
+.maturita-page {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.maturita-side-panel {
+  width: 30%;
+}
+
+.maturita-side-panel div {
+  position: sticky;
+  top: 97px;
+}
+
+.maturita-choice {
+  width: 70%;
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid var(--main-text);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.validation-messages p {
+  font-size: 1em;
+}
+
+.selected-books {
+  padding: 1em;
+  border: 1px solid var(--main-text);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+}
+
+.selected-books button {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+}
+.student-info {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.student-info-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.student-info-box input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 0.5em;
+}
+
+.maturita-err {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .maturita-err {
+    height: 90dvh;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--main-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden !important;
+  }
+
+  .maturita-page {
+    display: none;
+  }
+}

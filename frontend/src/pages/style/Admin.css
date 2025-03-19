@@ -1,0 +1,128 @@
+.admin {
+  gap: 1.5rem;
+  padding: 20px;
+}
+
+.admin > div {
+  background: #ffffff;
+}
+.book-form {
+  width: 30%;
+}
+
+.div-authors {
+  display: flex;
+  align-items: flex-end;
+}
+
+.icons-authors {
+  display: flex;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.stats > div:last-child {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.stats > div h3 {
+  margin: 0 0 1em 0;
+}
+
+.library-stats {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 3em;
+}
+
+
+.admin .mantine-Tabs-list {
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+}
+
+form > div {
+  margin-bottom: 10px;
+}
+
+/* Input Fields */
+.MantineTextInput-root,
+.MantineAutocomplete-root,
+.MantineNumberInput-root,
+.MantineFileInput-root {
+  margin-bottom: 15px;
+}
+
+.MantineTextInput-input,
+.MantineAutocomplete-input,
+.MantineNumberInput-input,
+.MantineFileInput-input {
+  border-radius: 5px;
+  border: 1px solid #dfe3e8;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.MantineTextInput-input:focus,
+.MantineAutocomplete-input:focus,
+.MantineNumberInput-input:focus,
+.MantineFileInput-input:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* Buttons */
+.MantineButton-root {
+  border-radius: 5px;
+  background-color: var(--secondary);
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.MantineButton-root:hover {
+  background-color: var(--secondary-hover);
+}
+
+.MantineButton-outline {
+  background-color: transparent;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.MantineButton-outline:hover {
+  background-color: #f0f4f9;
+}
+
+@media (max-width: 1000px) {
+  .admin {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .table-container {
+    width: 100%;
+  }
+
+  .book-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .library-stats {
+    flex-direction: column;
+  }
+}
+
+.ready-row {
+  background-color: #e6ffe6 !important; /* světle zelené pozadí */
+}

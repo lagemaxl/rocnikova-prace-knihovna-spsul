@@ -1,0 +1,78 @@
+.myacc {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 2em;
+}
+
+.myacc-books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.myacc-book {
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.myacc-book img {
+  margin-top: 15px;
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.myacc-book h1 {
+  font-size: 1.2em;
+  color: var(--main-text);
+  margin-bottom: 10px;
+  max-width: 15em;
+  word-break: break-word;
+}
+
+.myacc-book p {
+  font-size: 16px;
+  color: var(--secondary-text);
+  margin: 5px 0;
+}
+
+.myacc-book p strong {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .myacc-book {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .myacc-book img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .myacc-books {
+    justify-content: center;
+  }
+
+  .myacc {
+    margin: 1em;
+  }
+}

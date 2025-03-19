@@ -1,0 +1,14 @@
+.borrows-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  gap: 1em;
+  margin-right: 2em;
+}
+
+.td-buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}

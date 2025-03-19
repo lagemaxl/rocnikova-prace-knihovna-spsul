@@ -1,0 +1,11 @@
+:root {
+    --primary: #FAF9FF;
+    --secondary: #df3f1b;
+    --secondary-hover: #bf3d1d;
+    --danger: #BE1917;
+    --warning: #e6a700;
+    --success: #33a752;
+    --main-text: #333;
+    --secondary-text: #555;
+    
+}
